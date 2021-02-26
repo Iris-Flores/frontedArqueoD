@@ -1,0 +1,25 @@
+<div class="card border-primary mb-3">
+    <div class="card-header">Monedas</div>
+    <div class="card-body text-primary">
+      <h5 class="card-title">Listado de Monedas</h5>
+      <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Código Moneda</th>
+                <th>Abreviatura Moneda</th>
+                <th>Descripcion Moneda</th>
+                <th>Fecha Registro</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let moneda of monedas">
+                <td>{{moneda.codigoMoneda}}</td>
+                <td>{{moneda.abreviaturaMoneda}}</td>
+                <td>{{moneda.descripcionMoneda}}</td>
+                <td>{{moneda.fechaRegistro}}</td>
+            </tr>
+        </tbody>
+      </table>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
